@@ -15,14 +15,14 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
+  }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f4f4 !important;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .image-container {
@@ -70,8 +70,7 @@ section {
   color: #4c4c4c;
 }
 
-.row { 
-   
+.row {    
   display: flex;
   flex-wrap: wrap; /* gi prefrluvam vo nov red ako nema mesto */
   gap: 1px;
@@ -82,6 +81,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 30%;
 }
 .card { 
   background-color: #fff;
@@ -91,7 +91,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3 ease;
   text-align: center;
-  width: 600px;
+  width: 300px;
   height: 435px;
   display: flex;
   flex-direction: column;
@@ -207,11 +207,11 @@ section {
   align-items: center;
   justify-content: space-between;
   border: 2px solid #d8bfa8; 
-  padding: 25px; /* Зголемен внатрешен простор */
-  width: 100%; /* Користи ја целосната ширина на родителскиот елемент */
-  box-sizing: border-box; /* Padding нема да влијае на ширината */
-  border-radius: 15px; /* Повеќе заоблени агли */
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Суптилна сенка за длабочина */
+  padding: 25px; 
+  width: 100%; 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
 }
 
  .about-us-image {
@@ -258,11 +258,16 @@ footer{
   background-color: white;
   margin: 0.9px;
   border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
 }
 .socialIcons a i{
-  font-size: 1em;
+  font-size: 1.5rem;
   color: black;
   opacity: 0,9;
+ 
 }
 
 .socialIcons a:hover{
